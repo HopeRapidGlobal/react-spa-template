@@ -22,19 +22,13 @@ module.exports = (env) => ({
       },
       {
         test: /\.(s*)css/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [
-        { from: 'public' },
-      ],
+      patterns: [{ from: 'public' }],
     }),
     new Dotenv({
       path: `./.envs/${env.env}.env`,

@@ -24,13 +24,16 @@
     "dotenv-webpack": "^8.0.0",
     "eslint": "^8.12.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
+    "prettier": "^2.7.1",
     "react-test-renderer": "17.0.2",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
@@ -44,6 +47,7 @@
     "build:test": "webpack --env env=testing --mode production",
     "start": "webpack serve --env env=local --mode development",
     "start:test": "webpack serve --env env=testing --mode development",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write ."
   }
 }
